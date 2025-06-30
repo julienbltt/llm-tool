@@ -33,7 +33,7 @@ Follow the [LM Studio installation guide](https://lmstudio.ai/). Then you can in
 
 ---
 
-## Usage
+## Demo
 
 Start the assistant:
 
@@ -48,9 +48,7 @@ You'll be prompted to:
 
 Then, begin chatting! The assistant will speak the response aloud.
 
----
-
-## Example
+### Example
 
 ```text
 Enter a model id:
@@ -61,6 +59,23 @@ Enter your message: What is the capital of Japan?
 🎤 Synthèse vocale: The capital of Japan is Tokyo.
 
 Response time: 3.831 seconds
+```
+
+---
+
+## Using the Class Directly
+
+You can also use the LMStudioResponder class directly in your own scripts.
+
+```python
+from lmsClass import LMStudioResponder
+
+# Create an instance
+llm = LMStudioResponder(model_name="mistral-7b-instruct-v0.1", system_prompt="Answer concisely.")
+
+# Get and speak a response
+prompt = "What is the capital of Japan?"
+response = llm.respond_and_speak(prompt)
 ```
 
 ---
