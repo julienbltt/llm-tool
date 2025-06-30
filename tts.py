@@ -4,7 +4,7 @@ class _TTS:
 
     def __init__(self):
         self.engine = pyttsx3.init()
-        self.engine.setProperty('rate', 250) 
+        self.engine.setProperty('rate', 200) 
 
     def start(self,text_):
         self.engine.say(text_)

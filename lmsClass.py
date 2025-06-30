@@ -35,7 +35,10 @@ class LMStudioResponder:
             Iterator over streaming chunks from the model.
         """
         self.chat.add_user_message(prompt)
-        return self.model.respond_stream(self.chat)
+        return self.model.respond_stream(
+            self.chat,
+            on_message=self.chat.append,
+        )
     
     def _speak_chunks_from_stream(self, stream) -> str:
         """
