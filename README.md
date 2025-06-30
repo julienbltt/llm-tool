@@ -82,7 +82,7 @@ response = llm.respond_and_speak(prompt)
 
 ## Authors
 
-* **MattDff** – initial development
+* **MatteoD** – initial development
 * **Commpanion Team** – integration and optimization
 
 For more info on pyttsx3 or LM Studio, visit [https://pypi.org/project/pyttsx3/](https://pypi.org/project/pyttsx3/) and [https://lmstudio.ai](https://lmstudio.ai).
